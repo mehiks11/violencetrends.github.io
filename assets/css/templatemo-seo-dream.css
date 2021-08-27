@@ -146,12 +146,12 @@ body {
 }
 
 ::selection {
-  background: #49538f;
-  color: rgb(238, 255, 5);
+  background: #071669;
+  color: #FFFF0F;
 }
 
 ::-moz-selection {
-  background: #49538f;
+  background: #100ea7;
   color: #fff;
 }
 
@@ -179,10 +179,11 @@ body {
   margin-bottom: 60px;
 }
 
+
 .section-heading h6 {
   font-size: 15px;
   font-weight: 700;
-  color: #ed0370;
+  color: rgb(8, 179, 136);
   text-transform: uppercase;
   margin-bottom: 15px;
 
@@ -191,7 +192,7 @@ body {
 .section-heading h2 {
   font-size: 30px;
   text-transform: capitalize;
-  color: #2a2a2a;
+  color: #ffffff;
   font-weight: 800;
   position: relative;
   z-index: 2;
@@ -206,6 +207,8 @@ body {
 .section-heading h2 span {
   color: #ed0370;
 }
+
+
 
 .main-blue-button a {
   display: inline-block;
@@ -291,7 +294,7 @@ header
 
 /* nav bar menu */
 .header-area {
-  background-color: #42C7A0;
+  background-color: rgb(8, 179, 136);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -447,7 +450,7 @@ header
   opacity: 1;
   display: block;
   background: #f7f7f7;
-  color: #2a2a2a!important;
+  color: #FFFF0F!important;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -862,7 +865,7 @@ Banner Style
   position: absolute;
   left: 0;
   top: 100px;
-  width: 560px;
+  width: 767px;
   /* height: 1640px; */
   height: 3000px;
   z-index: -1;
@@ -888,7 +891,7 @@ Banner Style
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 400;
-  color: #2a2a2a;
+  color: #f3f3f3;
   margin-bottom: 8px;
 }
 
@@ -897,7 +900,7 @@ Banner Style
   position: relative;
   font-weight: 700;
   font-size: 20px;
-  color: #2a2a2a;
+  color: rgb(8, 179, 136);
 }
 
 .main-banner .left-content h2 {
@@ -910,9 +913,14 @@ Banner Style
   color: #2a2a2a;
   line-height: 72px;
   background: #4d5efa;
-  background: -webkit-linear-gradient(to right, #989ab3 0%, rgb(70, 63, 177) 100%);
-  background: -moz-linear-gradient(to right, #989ab3 0%, rgb(70, 63, 177) 100%);
-  background: linear-gradient(to right, #989ab3 0%, rgb(70, 63, 177) 100%);
+  background: -webkit-linear-gradient(to right, #8f8f8f 0%, rgb(119, 114, 195) 100%);
+  background: -moz-linear-gradient(to right, #8f8f8f 0%, rgb(70, 63, 177) 100%);
+  background: linear-gradient(to right, #8f8f8f 0%, rgb(70, 63, 177) 100%);
+  /* background: -webkit-linear-gradient(to right,  #70706F 0%, rgb(190, 192, 194) 100%);
+  background: -moz-linear-gradient(to right,  #70706F 0%, rgb(190, 192, 194)
+  100%);
+  background: linear-gradient(to right,  #70706F 0%, rgb(190, 192, 194)
+  100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -930,7 +938,7 @@ Banner Style
 
 /* 
 ---------------------------------------------
-Features Style
+CTVIP? Style
 --------------------------------------------- 
 */
 
@@ -960,7 +968,9 @@ Features Style
 
 .features-item:hover {
   background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  background: linear-gradient(105deg, rgb(8, 179, 136) 0%, rgba(8,141,195,1) 100%);
+  /* background: rgb(51,204,197);
+  background: linear-gradient(105deg, rgb(204, 168, 51) 0%, rgba(8,141,195,1) 100%); */
 }
 
 .features-item:hover h4 {
@@ -1003,15 +1013,15 @@ Features Style
 }
 
 .features-item .second-number h6 {
-  background-image: url(../images/features-number-02.png);
+  background-image: url(../images/features-number-01.png);
 }
 
 .features-item .third-number h6 {
-  background-image: url(../images/features-number-03.png);
+  background-image: url(../images/features-number-01.png);
 }
 
 .features-item .fourth-number h6 {
-  background-image: url(../images/features-number-04.png);
+  background-image: url(../images/features-number-01.png);
 }
 
 .first-feature .icon {
@@ -1287,7 +1297,12 @@ Overview Style
 */
 
 #overview {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background-image: url(../images/overview-bg.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .overview .overview-content {
@@ -1646,6 +1661,7 @@ CTVIP  Style
 
 .about-us .section-heading {
   margin-bottom: 40px;
+  color: #fff
 }
 
 .about-us .left-image {
@@ -1658,11 +1674,12 @@ CTVIP  Style
   color:#088ec3;
 }
 
+
 .about-us .about-item h6 {
   font-size: 16px;
   margin-top: 5px;
   font-weight: 400;
-  color: #2a2a2a;
+  color: #1d1111;
   text-transform: capitalize;
 }
 
