@@ -23,13 +23,12 @@
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!--
+    <!-- Scripts -->
+    <script src="https://unpkg.com/d3@7.0.1/dist/d3.min.js" defer> </script>
+    <script src="https://unpkg.com/d3-scale@3.2.3/dist/d3-scale.min.js" defer> </script>
+    <script src="assets/js/d3stuff.js" defer></script>
 
-TemplateMo 563 SEO Dream
 
-https://templatemo.com/tm-563-seo-dream
-
--->
 
 </head>
 <!-- 
@@ -64,9 +63,8 @@ https://templatemo.com/tm-563-seo-dream
                         <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                         <li class="scroll-to-section"><a href="#ctvip">CTVIP</a></li>
                         <li class="scroll-to-section"><a href="#overview">Data Overview</a></li>
-                        <li class="scroll-to-section"><a href="#national">National & State Trends</a></li>
-                        <!-- <li class="scroll-to-section"><a href="#state">State Trends</a></li> -->
-                        <!-- <li class="scroll-to-section"><a href="#c">County Trends?</a></li> -->
+                        <li class="scroll-to-section"><a href="#national">National Trends</a></li>
+                        <li class="scroll-to-section"><a href="#state">State Trends</a></li>
                         <li class="scroll-to-section">
                             <div class="main-blue-button"><a href="#county">Find Your County</a></div>
                         </li>
@@ -256,7 +254,7 @@ https://templatemo.com/tm-563-seo-dream
                                         <h6>A</h6>
                                     </div>
                                     <div class="icon"></div> -->
-                                    <h4>Identify Highest Risk</h4>
+                                    <h4>Source</h4>
                                     <div class="line-dec"></div>
                                     <p>Identify individuals at highest risk for violence.</p>
                                 </div>
@@ -268,9 +266,9 @@ https://templatemo.com/tm-563-seo-dream
                                         <h6>B</h6>
                                     </div>
                                     <div class="icon"></div> -->
-                                    <h4>Outreach & Mentoring</h4>
+                                    <h4>X</h4>
                                     <div class="line-dec"></div>
-                                    <p>Outreach workers maintain contact with individuals.
+                                    <p>Add Text.
                                     </p>
                                 </div>
                             </div>
@@ -281,10 +279,9 @@ https://templatemo.com/tm-563-seo-dream
                                         <h6>C</h6>
                                     </div>
                                     <div class="icon"></div> -->
-                                    <h4>Community Happenings</h4>
+                                    <h4>Y</h4>
                                     <div class="line-dec"></div>
-                                    <p> Outreach workers keep in contact with community and stay updated on social
-                                        happenings.
+                                    <p> Add Text.
                                     </p>
                                 </div>
                             </div>
@@ -295,10 +292,9 @@ https://templatemo.com/tm-563-seo-dream
                                         <h6>D</h6>
                                     </div>
                                     <div class="icon"></div> -->
-                                    <h4>Data Collection</h4>
+                                    <h4>Z</h4>
                                     <div class="line-dec"></div>
-                                    <p>Collect data on outreach worker contact, conflict prevention, and more to
-                                        optimize efforts.</p>
+                                    <p>Add Text.</p>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +305,6 @@ https://templatemo.com/tm-563-seo-dream
             </div>
         </div>
     </div>
-
 
     <div id="national" class="our-portfolio section">
         <div class="container">
@@ -328,8 +323,43 @@ https://templatemo.com/tm-563-seo-dream
                     width="1050" height="537" style="border: none;"></iframe>
                 <script>if (window.addEventListener) { window.addEventListener("message", function (event) { if (event.data.length >= 22) { if (event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent) { window.attachEvent("message", function (event) { if (event.data.length >= 22) { if (event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); }</script>
             </div>
-            <div>
-                // place chart visuals here
+            <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div id="natrates" class="natrates" style="text-align:center">
+                    <div class="section-heading">
+                        <h2 style="color: #100ea7">Homicides <span>Per 100,000</span> Population by Year</h2>
+                    </div>
+                    <svg>
+                    </svg>
+                    <br>
+                    <br>
+                    <p style="font-size: 35px; color:#100ea7">2010&nbsp;&nbsp;&nbsp; 2011
+                        &nbsp;&nbsp;&nbsp;2012 &nbsp;&nbsp;&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;
+                        2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015&nbsp;&nbsp;&nbsp;&nbsp;
+                        2016&nbsp;&nbsp;&nbsp;&nbsp; 2017&nbsp;&nbsp;&nbsp;&nbsp; 2018&nbsp;&nbsp;&nbsp;
+                        2019
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div id="natabs" class="natabs" style="text-align:center">
+                    <div class="section-heading">
+                        <h2 style="color: #100ea7"><span>Total</span> Homicides by Year</h2>
+                    </div>
+                    <svg>
+                    </svg>
+                    <br>
+                    <br>
+                    <p style="font-size: 35px; color:#100ea7">2010&nbsp;&nbsp;&nbsp; 2011
+                        &nbsp;&nbsp;&nbsp;2012 &nbsp;&nbsp;&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;
+                        2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015&nbsp;&nbsp;&nbsp;&nbsp;
+                        2016&nbsp;&nbsp;&nbsp;&nbsp; 2017&nbsp;&nbsp;&nbsp;&nbsp; 2018&nbsp;&nbsp;&nbsp;
+                        2019
+                    </p>
+                    <br>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
@@ -349,58 +379,59 @@ https://templatemo.com/tm-563-seo-dream
                             <div class="col-lg-9">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <select>
-                                            <option value="AL">Alabama</option>
-                                            <option value="AK">Alaska</option>
-                                            <option value="AZ">Arizona</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="CA">California</option>
-                                            <option value="CO">Colorado</option>
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="DC">District Of Columbia</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="HI">Hawaii</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NV">Nevada</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="OR">Oregon</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WA">Washington</option>
-                                            <option value="WV">West Virginia</option>
-                                            <option value="WI">Wisconsin</option>
-                                            <option value="WY">Wyoming</option>
+                                        <select name="state" id="state" onchange="select_state()">
+                                            < <option value="">Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District Of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
                                         </select>
                                     </div>
                                     <div class="col-lg-12">
@@ -410,6 +441,9 @@ https://templatemo.com/tm-563-seo-dream
                                         </fieldset>
                                     </div>
                                 </div>
+                            </div>
+                            <div id="AL" style="display: none;">
+                                <p style="font-size: 200px;"> hey</p>
                             </div>
                         </div>
                     </form>
@@ -427,72 +461,77 @@ https://templatemo.com/tm-563-seo-dream
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="section-heading">
                                     <h6>County Trends</h6>
-                                    <h2 style="color:#100ea7">Find a <span>County</span> Below </h2>
+                                    <h2 style="color:#100ea7">Select a <span>State & County</span> Below </h2>
                                 </div>
                             </div>
                             <div class="col-lg-9">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="name" name="name" id="name" placeholder="Name"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="surname" name="surname" id="surname" placeholder="Surname"
-                                                autocomplete="on" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                                placeholder="Your Email" required="">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <fieldset>
-                                            <input type="subject" name="subject" id="subject" placeholder="Subject"
-                                                autocomplete="on">
-                                        </fieldset>
+                                        <select name="state" id="state" onchange="select_state()">
+                                            < <option value="">Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District Of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                        </select>
                                     </div>
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <textarea name="message" type="text" class="form-control" id="message"
-                                                placeholder="Message" required=""></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button ">Send Message
-                                                Now</button>
+                                            <button type="submit" id="form-submit" class="main-button ">Show me
+                                                visuals!</button>
                                         </fieldset>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="contact-info">
-                                    <ul>
-                                        <li>
-                                            <div class="icon">
-                                                <img src="assets/images/contact-icon-01.png" alt="email icon">
-                                            </div>
-                                            <a href="#">info@company.com</a>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <img src="assets/images/contact-icon-02.png" alt="phone">
-                                            </div>
-                                            <a href="#">+001-002-0034</a>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <img src="assets/images/contact-icon-03.png" alt="location">
-                                            </div>
-                                            <a href="#">26th Street, Digital Villa</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div id="AL" style="display: none;">
+                                <p style="font-size: 200px;"> hey</p>
                             </div>
                         </div>
                     </form>
@@ -516,12 +555,15 @@ https://templatemo.com/tm-563-seo-dream
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="/lib/jquery.plugin.js"></script> -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
 
+    </script>
+
     </body>
 
-</html> -->
+</html>
