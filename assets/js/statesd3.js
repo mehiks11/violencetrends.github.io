@@ -4084,7 +4084,7 @@ function state_chart(data) {
         .attr('width', (CHART_WIDTH - 90) / 10)
         .attr('height', (data) => CHART_HEIGHT - y(data.Year))
         .attr('x', (data, i) => i * 120)
-        .attr('y', (data) => ((y(data.Rate))) + 15)
+        .attr('y', (data) => ((y(data.Rate))))
 
     //text labels on bars
     chartContainer.append('g').selectAll("text")
@@ -4100,7 +4100,7 @@ function state_chart(data) {
 
 
     // absolute death charts
-    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Deaths; })) - 5, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 10]);
+    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Deaths; })) - 10, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 10]);
 
     let chartContainer1 = d3
         .select('.modal')
@@ -4139,7 +4139,7 @@ function state_chart(data) {
 
 
 function handlechange() {
-    d3.selectAll('svg').selectAll('g').remove();
+    d3.select(".modal").selectAll('svg').selectAll('g').remove();
     let state = document.getElementById("selectstate").value
     let modal = document.getElementById("modal")
     modal.style.display = "block";

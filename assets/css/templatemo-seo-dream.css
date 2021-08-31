@@ -215,7 +215,7 @@ body {
   background-color: #100ea7;
   font-size: 15px;
   font-weight: 400;
-  color: #fff;
+  color: #FFFF0F;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
@@ -225,8 +225,8 @@ body {
 }
 
 .main-blue-button a:hover {
-  background-color: #fff!important;
-  color: #010102!important;
+  background-color: #071669!important;
+  color: #FFFF0F!important;
   border-bottom: 2px solid rgb(8, 179, 136)!important;
 }
 
@@ -245,8 +245,8 @@ body {
 }
 
 .main-green-button a:hover {
-  background-color: #fff!important;
-  color: #010102!important;
+  background-color: #071669!important;
+  color: #FFFF0F!important;
   border-bottom: 2px solid #33ccc5!important;
 }
 
@@ -258,7 +258,7 @@ header
 */
 
 .background-header {
-  background-color: #100EA7!important;
+  background-color: #071669!important;
   height: 80px!important;
   position: fixed!important;
   top: 0px;
@@ -294,7 +294,9 @@ header
 
 /* nav bar menu */
 .header-area {
-  background-color: rgb(8, 179, 136);
+  /* background-color: rgb(8, 179, 136); */
+  background-color:#071669;
+  color:#FFFF0F;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1024,8 +1026,6 @@ CTVIP? Style
   margin-top: -65px;
   margin-bottom: 30px;
 }
-
-
 
 .first-feature .icon {
   background-image: url(../images/features-icon-black-01.png);
