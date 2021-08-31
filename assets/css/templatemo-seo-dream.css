@@ -212,7 +212,7 @@ body {
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #1a7ef0;
+  background-color: #100ea7;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -227,12 +227,12 @@ body {
 .main-blue-button a:hover {
   background-color: #fff!important;
   color: #010102!important;
-  border-bottom: 2px solid #4771cb!important;
+  border-bottom: 2px solid rgb(8, 179, 136)!important;
 }
 
 .main-green-button a {
   display: inline-block;
-  background-color: #1a7ef0;
+  background-color: rgb(8, 179, 136);
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -245,8 +245,8 @@ body {
 }
 
 .main-green-button a:hover {
-  background-color: #010102!important;
-  color: #fff!important;
+  background-color: #fff!important;
+  color: #010102!important;
   border-bottom: 2px solid #33ccc5!important;
 }
 
@@ -984,10 +984,11 @@ CTVIP? Style
 
 .features-item:hover {
   background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgb(8, 179, 136) 0%, rgba(8,141,195,1) 100%);
+  background: linear-gradient(105deg, rgb(8, 179, 136) 0%, rgb(79, 166, 238) 100%);
   /* background: rgb(51,204,197);
   background: linear-gradient(105deg, rgb(204, 168, 51) 0%, rgba(8,141,195,1) 100%); */
 }
+/* rgb(8, 179, 136) 0%, rgb(79, 166, 238) */
 
 .features-item:hover h4 {
   color: #fff;
@@ -1024,21 +1025,7 @@ CTVIP? Style
   margin-bottom: 30px;
 }
 
-.features-item .first-number h6 {
-  background-image: url(../images/features-number-01.png);
-}
 
-.features-item .second-number h6 {
-  background-image: url(../images/features-number-01.png);
-}
-
-.features-item .third-number h6 {
-  background-image: url(../images/features-number-01.png);
-}
-
-.features-item .fourth-number h6 {
-  background-image: url(../images/features-number-01.png);
-}
 
 .first-feature .icon {
   background-image: url(../images/features-icon-black-01.png);
@@ -1343,7 +1330,7 @@ Overview Style
 
 .overview-item:hover {
   background: rgb(51,204,197);
-  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
+  background: linear-gradient(105deg, rgb(8, 179, 136) 0%, rgb(79, 166, 238) 100%);
 }
 
 .overview-item:hover h4 {
