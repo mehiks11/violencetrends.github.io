@@ -4062,7 +4062,8 @@ function state_chart(data) {
     let y = d3.scaleLinear().range([CHART_HEIGHT, 0]);
 
     x.domain([data].map((d) => d.Year));
-    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Rate; })) - .5, Math.max.apply(Math, data.map(function (o) { return o.Rate; })) + 1]);
+    // y.domain([Math.min.apply(Math, data.map(function (o) { return o.Rate; })) - .5, Math.max.apply(Math, data.map(function (o) { return o.Rate; })) + 1]);
+    y.domain([0, Math.max.apply(Math, data.map(function (o) { return o.Rate; })) + 1]);
 
     let chartContainer = d3
         .select('.modal')
@@ -4082,7 +4083,9 @@ function state_chart(data) {
         .attr('fill', '#42C7A0')
         .attr('stroke-width', 1.5)
         .attr('width', (CHART_WIDTH - 90) / 10)
-        .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => y(data.Year) * (-1))
+        .attr('height', 1000000)
         .attr('x', (data, i) => i * 120)
         .attr('y', (data) => ((y(data.Rate))))
 
@@ -4100,7 +4103,8 @@ function state_chart(data) {
 
 
     // absolute death charts
-    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Deaths; })) - 10, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 10]);
+    // y.domain([Math.min.apply(Math, data.map(function (o) { return o.Deaths; })) - 10, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 10]);
+    y.domain([0, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 50]);
 
     let chartContainer1 = d3
         .select('.modal')
@@ -4120,7 +4124,9 @@ function state_chart(data) {
         .attr('fill', '#42C7A0')
         .attr('stroke-width', 1.5)
         .attr('width', (CHART_WIDTH - 90) / 10)
-        .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => (y(data.Year)) * 200)
+        .attr('height', 1000000)
         .attr('x', (data, i) => i * 120)
         .attr('y', (data) => ((y(data.Deaths))) + 15)
 
@@ -37817,7 +37823,7 @@ function county_chart(data) {
     let y = d3.scaleLinear().range([CHART_HEIGHT, 0]);
 
     x.domain([data].map((d) => d.Year));
-    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Rate; })) - 1, Math.max.apply(Math, data.map(function (o) { return o.Rate; })) + 1]);
+    y.domain([0, Math.max.apply(Math, data.map(function (o) { return o.Rate; })) + 1]);
 
     let chartContainer3 = d3
         .select('.modal1')
@@ -37837,9 +37843,10 @@ function county_chart(data) {
         .attr('fill', '#42C7A0')
         .attr('stroke-width', 1.5)
         .attr('width', (CHART_WIDTH - 90) / 10)
-        .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        .attr('height', 1000000)
         .attr('x', (data, i) => (i * 120))
-        .attr('y', (data) => ((y(data.Rate))) + 15)
+        .attr('y', (data) => ((y(data.Rate))))
 
     //text labels on bars
     chartContainer3.append('g').selectAll("text")
@@ -37866,7 +37873,7 @@ function county_chart(data) {
 
 
     // absolute death charts
-    y.domain([Math.min.apply(Math, data.map(function (o) { return o.Deaths; })) - 5, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 10]);
+    y.domain([0, Math.max.apply(Math, data.map(function (o) { return o.Deaths; })) + 20]);
 
     let chartContainer4 = d3
         .select('.modal1')
@@ -37886,9 +37893,10 @@ function county_chart(data) {
         .attr('fill', '#42C7A0')
         .attr('stroke-width', 1.5)
         .attr('width', (CHART_WIDTH - 90) / 10)
-        .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        // .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+        .attr('height', 1000000)
         .attr('x', (data, i) => i * 120)
-        .attr('y', (data) => ((y(data.Deaths))) + 15)
+        .attr('y', (data) => ((y(data.Deaths))))
 
     //text labels on bars
     chartContainer4.append('g').selectAll("text")

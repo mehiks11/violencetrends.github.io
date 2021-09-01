@@ -70,7 +70,7 @@ const y = d3.scaleLinear().range([CHART_HEIGHT, 0]);
 
 
 x.domain([nat_data].map((d) => d.Year));
-y.domain([4, 7]);
+y.domain([0, 7]);
 
 const chartContainer = d3
     .select('.natrates')
@@ -89,7 +89,8 @@ chart
     .attr('fill', '#42C7A0')
     .attr('stroke-width', 1.5)
     .attr('width', (CHART_WIDTH - 90) / 10)
-    .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+    // .attr('height', (data) => CHART_HEIGHT - y(data.Year))
+    .attr('height', (data) => y(data.Year) * (-1))
     .attr('x', (data, i) => i * 120)
     .attr('y', (data) => y(data.Rate))
 //text labels on bars
@@ -108,7 +109,8 @@ chartContainer.selectAll("text")
 
 // absolute deaths
 // x.domain([nat_data].map((d) => d.Year));
-y.domain([15000, 20000]);
+// y.domain([15000, 20000]);
+y.domain([0, 20000]);
 
 const chartContainer2 = d3
     .select('.natabs')
@@ -127,7 +129,9 @@ chart2
     .attr('fill', '#42C7A0')
     .attr('stroke-width', 1.5)
     .attr('width', (CHART_WIDTH - 90) / 10)
-    .attr('height', (data) => (CHART_HEIGHT - y(data.Year)) * (-1))
+    // .attr('height', (data) => (CHART_HEIGHT - y(data.Year)) * (-1))
+    // .attr('height', (data) => (y(data.Year)) * (2))
+    .attr('height', 1000000)
     .attr('x', (data, i) => i * 120)
     .attr('y', (data) => y(data.Deaths))
 //text labels on bars
