@@ -1857,7 +1857,6 @@ State/County Trends section?
 --------------------------------------------- 
 */
 
-
 .contact-us {
   margin-top: 90px;
   padding: 120px 0px;
@@ -1873,7 +1872,37 @@ State/County Trends section?
   padding:180px;
 }
 
-.
+.state-pg {
+  margin-top: 90px;
+  padding: 120px 0px;
+  background-image: url(../images/trends-bg.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.state-pg .section-heading {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding:180px;
+}
+
+.county-pg {
+  margin-top: 90px;
+  padding: 120px 0px;
+  background-image: url(../images/overview-bg.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.county-pg .section-heading {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding:180px;
+}
+
+
 
 /* 
 ---------------------------------------------
