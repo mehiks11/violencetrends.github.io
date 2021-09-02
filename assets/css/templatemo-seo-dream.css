@@ -108,6 +108,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-transform: scale(1);
 }
 
 a {
@@ -974,7 +975,7 @@ CTVIP? Style
 
 .features-item {
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   border-radius: 50px;
   background: rgb(255,255,255);
   background: linear-gradient(105deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);

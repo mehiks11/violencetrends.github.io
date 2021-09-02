@@ -84,20 +84,6 @@
     });
   });
 
-  /* Function to pull specific div depending on state */
-  function select_state() {
-    var select_status = $('#state').val();
-    if (select_status == 'AL') {
-      $('#AL').show();
-    }
-    else if (select_status == 'AK') {
-      $('#AK').show();
-    }
-    else {
-      $('#CT').show();
-    }
-
-  }
 
 
 
