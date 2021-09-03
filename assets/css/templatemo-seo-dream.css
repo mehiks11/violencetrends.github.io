@@ -108,8 +108,9 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-transform: scale(1);
+  -moz-transform: scale(.9);
 }
+
 
 a {
   text-decoration: none !important;
